@@ -89,7 +89,11 @@ There are two types of builds that you can proceed from here
 1. Build without the global map (**front-end + sliding window back-end + loop closure/pose graph**)
 
    ```sh
-   catkin build
+   # in the open version
+   # catkin build
+
+   # on my laptop
+   sudo catkin build --force-cmake
    ```
 
    
@@ -144,6 +148,10 @@ There are two types of builds that you can proceed from here
 * [Known issues and possible improvements](./doc/known_issues_and_improvements.md)
 
 ## Troubleshooting
+
+0. **git clone error**
+    
+    * It is necessary to change *git@github.com:...* to *https://github.com/...*
 
 0. **Weird building issues after some tinkering**. It is recommend to 
    
