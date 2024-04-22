@@ -1,0 +1,49 @@
+label: "NTU_VIRAL"
+# id: 412eab8e4058621f7036b5e765dfe812
+cameras:
+- camera:
+    label: cam0
+    # id: 54812562fa109c40fe90b29a59dd7798
+    line-delay-nanoseconds: 0
+    image_height: 480
+    image_width: 752
+    type: pinhole
+    intrinsics:
+      cols: 1
+      rows: 4
+      data: [4.250258563372763e+02, 4.267976260903337e+02, 3.860151866550880e+02, 2.419130336743440e+02]
+    distortion:
+      type: radial-tangential  
+      parameters:
+        cols: 1
+        rows: 4
+        data: [-0.288105327549552, 0.074578284234601, 7.784489598138802e-04,-2.277853975035461e-04]
+  T_B_C:
+    cols: 4
+    rows: 4
+    data: [ 0.02183084, -0.01312053,  0.99967558,  0.00552943,
+           0.99975965,  0.00230088, -0.02180248, -0.12431302,
+          -0.00201407,  0.99991127,  0.01316761,  0.01614686, 
+           0.00000000,  0.00000000,  0.00000000,  1.00000000 ]
+
+imu_params:
+  delay_imu_cam: 0.0
+  max_imu_delta_t: 0.01
+  acc_max: 176.0
+  omega_max: 17
+  sigma_omega_c: 12.0e-4
+  sigma_acc_c: 8.0e-3
+  sigma_omega_bias_c: 0.03
+  sigma_acc_bias_c: 0.1
+  sigma_integration: 0.0
+  g: 9.8082
+  imu_rate: 385
+
+imu_initialization:
+  velocity: [0.0, 0, 0.0]
+  omega_bias: [0.0, 0, 0.0]
+  acc_bias: [0.0, 0.0, 0.0]
+  velocity_sigma: 2.0
+  omega_bias_sigma: 0.01
+  acc_bias_sigma: 0.1
+
